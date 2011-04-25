@@ -1,0 +1,1 @@
+function data = imfT2star2(data, pulses)cut = 10; % ignore data points before this one.if nargin < 2    data =  permute(mean(data(:, cut:end, :), 2), [3 1 2]);else    data =  permute(mean(data(pulses, cut:end, :), 2), [3 1 2]);end

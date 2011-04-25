@@ -1,0 +1,1 @@
+function data = imfT2star3(data, pulse, refpulse)% anaT2star3(files, pulse, refpulse)cut = 10; % ignore data points before this one.data =  [mean(mean(data(pulse, cut:end, :), 3), 2), ...    mean(mean(data(refpulse, cut:end, :), 3), 2)];
